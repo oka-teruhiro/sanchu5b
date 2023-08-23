@@ -1,7 +1,7 @@
 name: sanchu5b
 description: プロバイダ＆モデル形式の天運三柱推命アプリ
 publish_to: 'none' # Remove this line if you wish to publish to pub.dev
-version: 5.0.2+1
+version: 5.0.4+1
 
 environment:
   sdk: '>=3.0.3 <4.0.0'
