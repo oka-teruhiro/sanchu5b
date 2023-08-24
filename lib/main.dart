@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const HomePage(title: '天運三柱推命ver.5.0.4'),
+      home: const HomePage(title: '天運三柱推命ver.5.0.5'),
     );
   }
 }
@@ -58,7 +58,7 @@ class HomePage extends StatelessWidget {
                   ],
                 ),
                 Text(
-                  model.aText,
+                  model.nowMoji,
                   style: const TextStyle(
                     fontSize: 30,
                   ),
