@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const HomePage(title: '天運三柱推命ver.5.0.6'),
+      home: const HomePage(title: '天運三柱推命ver.5.0.7'),
     );
   }
 }
@@ -37,7 +37,7 @@ class HomePage extends StatelessWidget {
     int c3 = -1407770; // ピンク
 
     return ChangeNotifierProvider<MainModel>(
-      create: (_) => MainModel(),
+      create: (_) => MainModel()..init(),
       child: Consumer<MainModel>(builder: (context, model, child) {
         return Scaffold(
           appBar: AppBar(

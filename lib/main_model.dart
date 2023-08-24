@@ -43,6 +43,29 @@ class MainModel extends ChangeNotifier {
     notifyListeners();
   }
 
+  void init() {
+    //c++;
+    //ct = c.toString();
+    now1 = now;
+    nowNen = now1.year; // 鑑定年
+    nowGatu = now1.month; // 鑑定月
+    nowNiti = now1.day; // 鑑定日
+    ct = nowNiti.toString();
+    //鑑定日の日干・日支を算出する
+    nowNitiKan = juKanNo(meisikiA(nowNen, nowGatu, nowNiti).substring(4, 5));
+    nowNitiSi = juuniSiNo(meisikiA(nowNen, nowGatu, nowNiti).substring(5, 6));
+    nowMoji = '$nowNen.$nowGatu.$nowNiti'; // 鑑定年月日の表示文字を作成
+    print('今日の日干：$nowNitiKan・日支：$nowNitiSi');
+    print('$seinenInt.$seigatuInt.$seinitiInt生');
+    // 鑑定日の通変星を算出する
+    nowTuhen =
+        tuuhenbosi(seinenInt, seigatuInt, seinitiInt, nowNen, nowGatu, nowNiti);
+    tuhen = tuuhenbosiNo(nowTuhen);
+    print('鑑定日の通変星：$nowTuhen・$tuhen');
+
+    notifyListeners();
+  }
+
   void changeAText() {
     tuhen = (tuhen + 1) % 10;
 
