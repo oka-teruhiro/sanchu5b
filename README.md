@@ -4,14 +4,8 @@
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+天運三柱推命ver.4.3.14でピンクの丸が動かない現象が発生した。
+その原因を解決するために本アプリを徐々に構築した。
+原因が判明したのでその内容をver4.3.15に織り込んだ。
+2023.8.26 19:38
 # sanchu5b
